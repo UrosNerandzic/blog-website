@@ -22,7 +22,7 @@
                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <ul class="navbar-nav  mb-2 mb-lg-0">
+               <ul class="navbar-nav   mb-2 mb-lg-0">
                   <li class="nav-item mx-5">
                      <a class="nav-link active" aria-current="page" href="index.php">
                         Technology
@@ -40,7 +40,7 @@
                   <li class="nav-item mx-5">
                      <a class="nav-link" href="./contact.php">Contact</a>
                   </li>
-                  <li class="nav-item mx-5 ">
+                  <li>
                      <a class="nav-link text-center" href="./login.php">
                         <img class="login-svg" src="../image/icons/profile.svg" alt="">
                      </a>
