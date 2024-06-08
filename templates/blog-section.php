@@ -2,6 +2,10 @@
    <h1 class="text-center blog-title mb-5">
       Blog
    </h1>
+   <form class="d-flex search-bar-blog">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+   </form>
    <div class="row justify-content-between">
       <div class="col-md-3 p-0 blog-item text-white">
          <img class="blog-image" src="./image/blog/js-blog.jpg" alt="">

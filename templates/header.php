@@ -31,9 +31,7 @@
                   <li class="nav-item mx-5">
                      <a class="nav-link" href="./blog.php">Blog</a>
                   </li>
-                  <li class="nav-item mx-5">
-                     <a class="nav-link" href="./login.php">Login</a>
-                  </li>
+
                   <li class="nav-item mx-5">
                      <a class="nav-link" href="./register.php">
                         Register
@@ -42,11 +40,12 @@
                   <li class="nav-item mx-5">
                      <a class="nav-link" href="./contact.php">Contact</a>
                   </li>
+                  <li class="nav-item mx-5 ">
+                     <a class="nav-link text-center" href="./login.php">
+                        <img class="login-svg" src="../image/icons/profile.svg" alt="">
+                     </a>
+                  </li>
                </ul>
-               <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-               </form>
             </div>
          </div>
       </nav>
