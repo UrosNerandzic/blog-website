@@ -87,12 +87,16 @@ body {
   padding-top: 0;
   padding-bottom: 5px;
 }
-label {
+label,
+validation {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  max-width: 35%;
   margin: auto;
   color: white;
+}
+.validation {
+  color: #fa8072;
 }
 input::placeholder {
   text-align: center;

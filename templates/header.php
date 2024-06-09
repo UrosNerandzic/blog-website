@@ -23,13 +23,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                <ul class="navbar-nav   mb-2 mb-lg-0">
+
                   <li class="nav-item mx-5">
-                     <a class="nav-link active" aria-current="page" href="index.php">
-                        Technology
-                     </a>
-                  </li>
-                  <li class="nav-item mx-5">
-                     <a class="nav-link" href="./blog.php">Blog</a>
+                     <a class="nav-link" href="./index.php">Blog</a>
                   </li>
 
                   <li class="nav-item mx-5">
@@ -37,14 +33,29 @@
                         Register
                      </a>
                   </li>
-                  <li class="nav-item mx-5">
-                     <a class="nav-link" href="./contact.php">Contact</a>
-                  </li>
+                  <?php 
+                  if(!isset($_SESSION['id'])){
+                     ?>
                   <li>
                      <a class="nav-link text-center" href="./login.php">
                         <img class="login-svg" src="../image/icons/profile.svg" alt="">
+                        Login
                      </a>
                   </li>
+                  <?php
+                  }
+                  else{
+                     ?>
+                  <li> <a class="nav-link text-center" href="./logout.php">
+                        <img class="login-svg" src="../image/icons/profile.svg" alt="">
+                        Logout
+                     </a>
+                  </li>
+                  <?php
+                  }
+                  ?>
+
+
                </ul>
             </div>
          </div>
