@@ -27,12 +27,19 @@
                   <li class="nav-item mx-5">
                      <a class="nav-link" href="./index.php">Blog</a>
                   </li>
-
+                  <?php 
+                     if(!isset($_SESSION['id'])){
+                        ?>
                   <li class="nav-item mx-5">
                      <a class="nav-link" href="./register.php">
                         Register
                      </a>
                   </li>
+                  <?php
+                     }
+                  ?>
+
+
                   <?php 
                   if(!isset($_SESSION['id'])){
                      ?>
@@ -44,6 +51,7 @@
                   </li>
                   <?php
                   }
+
                   else{
                      ?>
                   <li> <a class="nav-link text-center" href="./logout.php">

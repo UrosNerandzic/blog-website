@@ -7,7 +7,7 @@ $errors = [
    'email' => '',
    'password' => ''
 ];
-// da li je metoda post
+
 if($_SERVER['REQUEST_METHOD'] == "POST"){
    //something was posted
   $email = $_POST['email'];
