@@ -7,6 +7,7 @@ include("connection.php");
 include("functions.php");
 
 $user_data = check_login($con);
+$post_data = check_post($con);
 
 ?>
 <?php
@@ -20,12 +21,12 @@ $user_data = check_login($con);
          <img class="image-section-first" src="./image/technology.jpg" alt="">
       </div>
       <div class="col-md-6 align-items-center m-auto">
-         <h1 class="text-center pb-4">Technology</h1>
+         <h1 class="text-center pb-4">
+            Welcome <?php echo ucfirst($user_data['first_name']);?>
+         </h1>
          <p class="text-center text-section-one">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Quae reiciendis fugit optio hic possimus culpa cumque.
-            Libero saepe tempora possimus earum architecto omnis iste excepturi.
-            Quae aperiam numquam voluptas similique.
+            Hello <?php echo ucfirst($user_data['first_name']);?>, I will introduce you to the blog site.
+            Where you will be able to edit blogs according to your taste.
          </p>
       </div>
    </div>

@@ -15,4 +15,15 @@ function check_login($con){
    header("Location: login.php");
    die;
 }
+
+function check_post($con){
+   
+      $query = 'select * from posts ';
+      $result = mysqli_query($con, $query);
+      
+      $post_data = mysqli_fetch_all($result,MYSQLI_ASSOC);
+      
+      return $post_data;
+      
+}
 ?>

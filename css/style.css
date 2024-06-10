@@ -44,7 +44,10 @@ body {
   border-color: #0f6593 !important;
   color: white !important;
 }
-
+.blog-a img {
+  width: 330px;
+  height: 185px;
+}
 .blog-title {
   margin-top: 40px;
 }
